@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-typescript-recommended",
+  "version": "1.0.0",
+  "description": "TSLint recommended rules for ESLint",
+  "author": "Christian Stornowski <christian.stornowski@diva-e.com> (https://www.diva-e.com/)",
+  "homepage": "https://www.diva-e.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diva-e/eslint-config-typescript-recommended.git"
+  },
+  "bugs": "https://github.com/diva-e/eslint-config-typescript-recommended/issues",
+  "keywords": [
+    "eslint",
+    "config",
+    "eslintconfig",
+    "typescript"
+  ],
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint-plugin-typescript": "0.13.0"
+  },
+  "license": "Apache-2.0"
+}
