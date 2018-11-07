@@ -10,7 +10,7 @@ This config will use available rules from `eslint-plugin-typescript` and configu
 ## Install
 
 ```bash
-npm install eslint-config-typescript-recommended
+npm install --save-dev eslint-config-typescript-recommended
 ```
 
 Then, add this to your .eslintrc file:
