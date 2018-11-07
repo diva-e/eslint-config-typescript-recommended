@@ -17,6 +17,6 @@ Then, add this to your .eslintrc file:
 
 ```
 {
-  "extends": ["plugin:typescript-recommended"]
+  "extends": ["typescript-recommended"]
 }
 ```
