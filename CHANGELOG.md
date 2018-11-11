@@ -1,5 +1,15 @@
 # Changes
 
+## 1.1.0.
+
+### Bug Fixes
+
+ * None
+
+### Features
+
+ * Added support for `tslint` rules configuration when available in `eslint`.
+
 ## 1.0.2
 
 ### Bug Fixes
