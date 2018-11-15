@@ -1,4 +1,5 @@
 module.exports = {
+    extends: 'eslint:recommended',
     rules: {
         'typescript/adjacent-overload-signatures': 'error',
         'typescript/class-name-casing': 'error',

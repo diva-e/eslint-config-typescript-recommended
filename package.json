@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-typescript-recommended",
-  "version": "1.1.0",
-  "description": "TSLint recommended rules for ESLint",
+  "version": "1.2.0",
+  "description": "TSLint recommended rules for ESLint recommended config",
   "author": "Christian Stornowski <christian.stornowski@diva-e.com> (https://www.diva-e.com/)",
   "homepage": "https://www.diva-e.com",
   "repository": {

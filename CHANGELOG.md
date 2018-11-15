@@ -1,5 +1,15 @@
 # Changes
 
+## 1.2.0.
+
+### Bug Fixes
+
+ * None
+
+### Features
+
+ * Extends from `eslint:recommended`.
+
 ## 1.1.0.
 
 ### Bug Fixes
