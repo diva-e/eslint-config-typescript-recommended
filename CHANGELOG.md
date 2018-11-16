@@ -1,5 +1,15 @@
 # Changes
 
+## 1.3.0.
+
+### Bug Fixes
+
+ * None
+
+### Features
+
+ * Removed `eslint:recommended` dependencies by config rules separately.
+
 ## 1.2.0.
 
 ### Bug Fixes

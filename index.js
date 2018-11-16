@@ -1,23 +1,15 @@
 module.exports = {
-    extends: 'eslint:recommended',
     rules: {
-        'typescript/adjacent-overload-signatures': 'error',
-        'typescript/class-name-casing': 'error',
-        'typescript/interface-name-prefix': [
+        'arrow-body-style': [
             'error',
-            'always'
+            'as-needed'
         ],
-        'typescript/no-type-alias': 'error',
-        'typescript/explicit-member-accessibility': 'error',
-        'typescript/member-ordering': 'error',
-        'typescript/no-angle-bracket-type-assertion': 'error',
-        'typescript/no-empty-interface': 'error',
-        'typescript/prefer-namespace-keyword': 'error',
-        'typescript/no-namespace': 'error',
-        'typescript/no-parameter-properties': 'error',
-        'typescript/no-triple-slash-reference': 'error',
-        'typescript/no-var-requires': 'error',
         'arrow-parens': 'error',
+        'comma-dangle': [
+            'error',
+            'always-multiline'
+        ],
+        complexity: 'off',
         curly: 'error',
         eqeqeq: [
             'error',
@@ -25,23 +17,41 @@ module.exports = {
         ],
         'eol-last': 'error',
         'guard-for-in': 'error',
+        'indent': 'error',
+        'max-classes-per-file': 'error',
+        'max-len': [
+            'error',
+            {
+                'code': 120
+            }
+        ],
         'new-parens': 'error',
         'no-bitwise': 'error',
         'no-caller': 'error',
+        'no-cond-assign': 'error',
+        'no-console': 'error',
+        'no-debugger': 'error',
         'no-duplicate-imports': 'error',
+        'no-empty': 'error',
         'no-eval': 'error',
+        'no-invalid-this': 'error',
         'no-labels': 'error',
         'no-multiple-empty-lines': 'error',
+        'no-new': 'error',
         'no-new-wrappers': 'error',
+        'no-redeclare': 'error',
         'no-return-await': 'error',
         'no-shadow': 'error',
+        'no-sparse-arrays': 'error',
         'no-throw-literal': 'error',
         'no-trailing-spaces': 'error',
+        'no-undef-init': 'error',
+        'no-unsafe-finally': 'error',
         'no-unused-expressions': 'error',
         'no-var': 'error',
         'object-shorthand': 'error',
-        'one-var-declaration-per-line': 'error',
         'prefer-const': 'error',
+        'prefer-object-spread': 'error',
         quotes: [
             'error',
             'double',
@@ -59,12 +69,30 @@ module.exports = {
             'always'
         ],
         'space-before-function-paren': [
-            'error', {
+            'error',
+            {
                 anonymous: 'never',
                 asyncArrow: 'always',
                 named: 'never'
             }
         ],
-        'valid-jsdoc': 'error'
+        'spaced-comment': 'error',
+        'use-isnan': 'error',
+        'valid-jsdoc': 'error',
+        'typescript/adjacent-overload-signatures': 'error',
+        'typescript/class-name-casing': 'error',
+        'typescript/explicit-member-accessibility': 'error',
+        'typescript/interface-name-prefix': [
+            'error',
+            'always'
+        ],
+        'typescript/member-ordering': 'error',
+        'typescript/no-angle-bracket-type-assertion': 'error',
+        'typescript/no-empty-interface': 'error',
+        'typescript/no-namespace': 'error',
+        'typescript/no-triple-slash-reference': 'error',
+        'typescript/no-type-alias': 'error',
+        'typescript/no-var-requires': 'error',
+        'typescript/prefer-namespace-keyword': 'error'
     }
 };
