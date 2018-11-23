@@ -9,6 +9,7 @@ module.exports = {
             'error',
             'always-multiline'
         ],
+        'comma-spacing': 'error',
         complexity: 'off',
         curly: 'error',
         eqeqeq: [
@@ -18,11 +19,17 @@ module.exports = {
         'eol-last': 'error',
         'guard-for-in': 'error',
         'indent': 'error',
+        'keyword-spacing': [
+            'error',
+            {
+                after: true
+            }
+        ],
         'max-classes-per-file': 'error',
         'max-len': [
             'error',
             {
-                'code': 120
+                code: 120
             }
         ],
         'new-parens': 'error',
@@ -31,6 +38,7 @@ module.exports = {
         'no-cond-assign': 'error',
         'no-console': 'error',
         'no-debugger': 'error',
+        'no-duplicate-case': 'error',
         'no-duplicate-imports': 'error',
         'no-empty': 'error',
         'no-eval': 'error',
@@ -39,10 +47,16 @@ module.exports = {
         'no-multiple-empty-lines': 'error',
         'no-new': 'error',
         'no-new-wrappers': 'error',
-        'no-redeclare': 'error',
+        'no-redeclare': [
+            'error',
+            {
+                hoist: 'never'
+            }
+        ],
         'no-return-await': 'error',
         'no-shadow': 'error',
         'no-sparse-arrays': 'error',
+        'no-template-curly-in-string': 'error',
         'no-throw-literal': 'error',
         'no-trailing-spaces': 'error',
         'no-undef-init': 'error',
@@ -64,9 +78,17 @@ module.exports = {
             'consistent-as-needed'
         ],
         radix: 'error',
+        'rest-spread-spacing': 'error',
         semi: [
             'error',
             'always'
+        ],
+        'semi-spacing': [
+            'error',
+            {
+                before: false,
+                after: true
+            }
         ],
         'space-before-function-paren': [
             'error',
@@ -77,6 +99,11 @@ module.exports = {
             }
         ],
         'spaced-comment': 'error',
+        'space-infix-ops': 'error',
+        'space-within-parens': [
+            'error',
+            'always'
+        ],
         'use-isnan': 'error',
         'valid-jsdoc': 'error',
         'typescript/adjacent-overload-signatures': 'error',
