@@ -1,5 +1,15 @@
 # Changes
 
+## 1.4.0.
+
+### Bug Fixes
+
+ * Fixed wrong configuration
+ 
+### Features
+
+ * Added configuration tests
+
 ## 1.3.0.
 
 ### Bug Fixes
