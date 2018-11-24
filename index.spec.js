@@ -269,7 +269,7 @@ describe("typescript recommended rules", () => {
         test("no-string-literal", () => {
             const objectShorthand = eslintConfig.rules["object-shorthand"];
             expect(objectShorthand[0]).toBe("error");
-            expect(objectShorthand[1] === "properties" || objectShorthand[1] === "always");
+            expect(objectShorthand[1] === "properties" || objectShorthand[1] === "always").toBeTruthy();
         });
 
         test("no-string-throw", () => {
@@ -501,9 +501,8 @@ describe("typescript recommended rules", () => {
         test("no-string-literal", () => {
             const objectShorthand = eslintConfig.rules["object-shorthand"];
             expect(objectShorthand[0]).toBe("error");
-            expect(objectShorthand[1] === "properties" || objectShorthand[1] === "always");
+            expect(objectShorthand[1] === "properties" || objectShorthand[1] === "always").toBeTruthy();
         });
-
         test("no-string-throw", () => {
             expect(eslintConfig.rules["no-throw-literal"]).toBe("error");
         });
