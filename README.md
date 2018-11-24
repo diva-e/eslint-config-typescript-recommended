@@ -92,7 +92,27 @@ no-unused-expression | no-new
 no-use-before-declare | no-use-before-define
 no-var-keyword | no-var
 no-var-requires | typescript/no-var-requires
+object-literal-key-quotes | quote-props
+object-literal-shorthand | object-shorthand
+object-literal-sort-keys | sort-keys
+one-line | no-unexpected-multiline
+one-variable-per-declaration | one-var
+only-arrow-functions | prefer-arrow-callback
+ordered-imports | sort-imports
 prefer-conditional-expression | no-cond-assign
+prefer-const | prefer-const
+prefer-for-of | *-*
 prefer-object-spread | prefer-object-spread
+quotemark | quotes
+radix | radix
+semicolon | semi
+space-before-function-paren | space-before-function-paren
 space-within-parens | space-within-parens
+trailing-comma | comma-dangle
+triple-equals | eqeqeq
+typedef | *-*
+typedef-whitespace | *-*
+unified-signatures | *-*
+use-isnan | use-isnan
+variable-name | camelcase
 whitespace | keyword-spacing, space-infix-ops, comma-spacing, semi-spacing, rest-spread-spacing

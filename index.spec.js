@@ -6,7 +6,7 @@ describe("typescript recommended rules", () => {
         expect(eslintConfig.rules).toBeDefined();
     });
 
-    describe('latest', () => {
+    describe("latest", () => {
 
         test("align", () => {
             expect(eslintConfig.rules["align"]).toBeUndefined();
@@ -85,7 +85,7 @@ describe("typescript recommended rules", () => {
         });
     });
 
-    describe('ts', () => {
+    describe("ts", () => {
 
         test("align", () => {
             expect(eslintConfig.rules["align"]).toBeUndefined();
@@ -147,7 +147,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("interface-name", () => {
-            expect(eslintConfig.rules["typescript/interface-name-prefix"]).toMatchObject(["error", 'always']);
+            expect(eslintConfig.rules["typescript/interface-name-prefix"]).toMatchObject(["error", "always"]);
         });
 
         test("interface-over-type-literal", () => {
@@ -267,7 +267,9 @@ describe("typescript recommended rules", () => {
         });
 
         test("no-string-literal", () => {
-            expect(eslintConfig.rules["object-shorthand"]).toMatchObject(["error", 'properties']);
+            const objectShorthand = eslintConfig.rules["object-shorthand"];
+            expect(objectShorthand[0]).toBe("error");
+            expect(objectShorthand[1] === "properties" || objectShorthand[1] === "always");
         });
 
         test("no-string-throw", () => {
@@ -307,87 +309,87 @@ describe("typescript recommended rules", () => {
         });
 
         test("object-literal-key-quotes", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["quote-props"]).toMatchObject(["error", "consistent-as-needed"]);
         });
 
         test("object-literal-shorthand", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["object-shorthand"]).toMatchObject(["error", "always"]);
         });
 
         test("object-literal-sort-keys", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["sort-keys"]).toBe("error");
         });
 
         test("one-line", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-unexpected-multiline"]).toBe("error");
         });
 
         test("one-variable-per-declaration", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["one-var"]).toBe("error");
         });
 
         test("only-arrow-functions", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["prefer-arrow-callback"]).toMatchObject(["error", {allowNamedFunctions: false}]);
         });
 
         test("ordered-imports", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["sort-imports"]).toBe("error");
         });
 
         test("prefer-const", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["prefer-const"]).toBe("error");
         });
 
         test("prefer-for-of", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["prefer-for-of"]).toBeUndefined();
         });
 
         test("quotemark", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["quotes"]).toMatchObject(["error", "double", {avoidEscape: true}]);
         });
 
         test("radix", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["radix"]).toBe("error");
         });
 
         test("semicolon", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["semi"]).toBe("error");
         });
 
         test("space-before-function-paren", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["space-before-function-paren"]).toMatchObject(["error", {
+                anonymous: "never",
+                asyncArrow: "always",
+                named: "never"
+            }]);
         });
 
         test("trailing-comma", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["comma-dangle"]).toMatchObject(["error", "always-multiline"]);
         });
 
         test("triple-equals", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["eqeqeq"]).toMatchObject(["error", "always", {null: "ignore"}]);
         });
 
         test("typedef", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typedef"]).toBeUndefined();
         });
 
         test("typedef-whitespace", () => {
-            expect(false).toBeTruthy();
-        });
-
-        test("typeof-compare", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typedef-whitespace"]).toBeUndefined();
         });
 
         test("unified-signatures", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["unified-signatures"]).toBeUndefined();
         });
 
         test("use-isnan", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["use-isnan"]).toBe("error");
         });
 
         test("variable-name", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["camelcase"]).toBe("error");
         });
 
         test("whitespace", () => {
@@ -398,7 +400,7 @@ describe("typescript recommended rules", () => {
         });
     });
 
-    describe('js', () => {
+    describe("js", () => {
 
         test("align", () => {
             expect(eslintConfig.rules["align"]).toBeUndefined();
@@ -497,7 +499,9 @@ describe("typescript recommended rules", () => {
         });
 
         test("no-string-literal", () => {
-            expect(eslintConfig.rules["object-shorthand"]).toMatchObject(["error", 'properties']);
+            const objectShorthand = eslintConfig.rules["object-shorthand"];
+            expect(objectShorthand[0]).toBe("error");
+            expect(objectShorthand[1] === "properties" || objectShorthand[1] === "always");
         });
 
         test("no-string-throw", () => {
@@ -521,47 +525,51 @@ describe("typescript recommended rules", () => {
         });
 
         test("object-literal-sort-keys", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["sort-keys"]).toBe("error");
         });
 
         test("one-line", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-unexpected-multiline"]).toBe("error");
         });
 
         test("one-variable-per-declaration", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["one-var"]).toBe("error");
         });
 
         test("quotemark", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["quotes"]).toMatchObject(["error", "double", {avoidEscape: true}]);
         });
 
         test("radix", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["radix"]).toBe("error");
         });
 
         test("semicolon", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["semi"]).toBe("error");
         });
 
         test("space-before-function-paren", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["space-before-function-paren"]).toMatchObject(["error", {
+                anonymous: "never",
+                asyncArrow: "always",
+                named: "never"
+            }]);
         });
 
         test("trailing-comma", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["comma-dangle"]).toMatchObject(["error", "always-multiline"]);
         });
 
         test("triple-equals", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["eqeqeq"]).toMatchObject(["error", "always", {null: "ignore"}]);
         });
 
         test("use-isnan", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["use-isnan"]).toBe("error");
         });
 
         test("variable-name", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["camelcase"]).toBe("error");
         });
 
         test("whitespace", () => {

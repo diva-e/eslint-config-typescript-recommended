@@ -5,6 +5,7 @@ module.exports = {
             'as-needed'
         ],
         'arrow-parens': 'error',
+        'camelcase': "error",
         'comma-dangle': [
             'error',
             'always-multiline'
@@ -14,7 +15,10 @@ module.exports = {
         curly: 'error',
         eqeqeq: [
             'error',
-            'always'
+            'always',
+            {
+                null: "ignore"
+            }
         ],
         'eol-last': 'error',
         'guard-for-in': 'error',
@@ -61,13 +65,21 @@ module.exports = {
         'no-throw-literal': 'error',
         'no-trailing-spaces': 'error',
         'no-undef-init': 'error',
+        'no-unexpected-multiline': 'error',
         'no-unsafe-finally': 'error',
         'no-unused-expressions': 'error',
         'no-use-before-define': 'off',
         'no-var': 'error',
         'object-shorthand': [
             'error',
-            'properties'
+            'always'
+        ],
+        'one-var': 'error',
+        'prefer-arrow-callback': [
+            'error',
+            {
+                allowNamedFunctions: false
+            }
         ],
         'prefer-const': 'error',
         'prefer-object-spread': 'error',
@@ -84,10 +96,7 @@ module.exports = {
         ],
         radix: 'error',
         'rest-spread-spacing': 'error',
-        semi: [
-            'error',
-            'always'
-        ],
+        semi: 'error',
         'semi-spacing': [
             'error',
             {
@@ -109,6 +118,8 @@ module.exports = {
             'error',
             'always'
         ],
+        'sort-imports': 'error',
+        'sort-keys': 'error',
         'use-isnan': 'error',
         'valid-jsdoc': 'error',
         'typescript/adjacent-overload-signatures': 'error',
