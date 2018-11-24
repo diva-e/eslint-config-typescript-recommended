@@ -12,7 +12,8 @@
   "keywords": [
     "eslint",
     "config",
-    "eslintconfig",
+    "recommended",
+    "tslint",
     "typescript"
   ],
   "main": "index.js",

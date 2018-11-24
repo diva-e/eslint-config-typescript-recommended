@@ -18,7 +18,7 @@ module.exports = {
         ],
         'eol-last': 'error',
         'guard-for-in': 'error',
-        'indent': 'error',
+        indent: 'error',
         'keyword-spacing': [
             'error',
             {
@@ -42,7 +42,8 @@ module.exports = {
         'no-duplicate-imports': 'error',
         'no-empty': 'error',
         'no-eval': 'error',
-        'no-invalid-this': 'error',
+        'no-fallthrough': 'off',
+        'no-invalid-this': 'off',
         'no-labels': 'error',
         'no-multiple-empty-lines': 'error',
         'no-new': 'error',
@@ -62,8 +63,12 @@ module.exports = {
         'no-undef-init': 'error',
         'no-unsafe-finally': 'error',
         'no-unused-expressions': 'error',
+        'no-use-before-define': 'off',
         'no-var': 'error',
-        'object-shorthand': 'error',
+        'object-shorthand': [
+            'error',
+            'properties'
+        ],
         'prefer-const': 'error',
         'prefer-object-spread': 'error',
         quotes: [
@@ -108,6 +113,7 @@ module.exports = {
         'valid-jsdoc': 'error',
         'typescript/adjacent-overload-signatures': 'error',
         'typescript/class-name-casing': 'error',
+        'typescript/no-explicit-any': 'off',
         'typescript/explicit-member-accessibility': 'error',
         'typescript/interface-name-prefix': [
             'error',
@@ -117,6 +123,7 @@ module.exports = {
         'typescript/no-angle-bracket-type-assertion': 'error',
         'typescript/no-empty-interface': 'error',
         'typescript/no-namespace': 'error',
+        'typescript/no-parameter-properties': 'off',
         'typescript/no-triple-slash-reference': 'error',
         'typescript/no-type-alias': 'error',
         'typescript/no-var-requires': 'error',

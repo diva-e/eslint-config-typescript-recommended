@@ -92,63 +92,66 @@ describe("typescript recommended rules", () => {
         });
 
         test("array-type", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["array-type"]).toBeUndefined();
         });
 
         test("arrow-parens", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["arrow-parens"]).toBe("error");
         });
 
         test("arrow-return-shorthand", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["arrow-body-style"]).toMatchObject([
+                "error",
+                "as-needed"
+            ]);
         });
 
         test("ban-types", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["ban-types"]).toBeUndefined();
         });
 
         test("callable-types", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["callable-types"]).toBeUndefined();
         });
 
         test("class-name", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/class-name-casing"]).toBe("error");
         });
 
         test("comment-format", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["spaced-comment"]).toBe("error");
         });
 
         test("curly", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["curly"]).toBe("error");
         });
 
         test("cyclomatic-complexity", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["complexity"]).toBe("off");
         });
 
         test("eofline", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["eol-last"]).toBe("error");
         });
 
         test("forin", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["guard-for-in"]).toBe("error");
         });
 
         test("import-spacing", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["keyword-spacing"]).toMatchObject(["error", {after: true}]);
         });
 
         test("indent", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["indent"]).toBe("error");
         });
 
         test("interface-name", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/interface-name-prefix"]).toMatchObject(["error", 'always']);
         });
 
         test("interface-over-type-literal", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-type-alias"]).toBe("error");
         });
 
         test("jsdoc-format", () => {
@@ -156,151 +159,151 @@ describe("typescript recommended rules", () => {
         });
 
         test("label-position", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-labels"]).toBe("error");
         });
 
         test("max-classes-per-file", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["max-classes-per-file"]).toBe("error");
         });
 
         test("max-line-length", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["max-len"]).toMatchObject(["error", {code: 120}]);
         });
 
         test("member-access", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/explicit-member-accessibility"]).toBe("error");
         });
 
         test("member-ordering", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/member-ordering"]).toBe("error");
         });
 
         test("new-parens", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["new-parens"]).toBe("error");
         });
 
         test("no-angle-bracket-type-assertion", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-angle-bracket-type-assertion"]).toBe("error");
         });
 
         test("no-any", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-explicit-any"]).toBe("off");
         });
 
         test("no-arg", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-caller"]).toBe("error");
         });
 
         test("no-bitwise", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-bitwise"]).toBe("error");
         });
 
         test("no-conditional-assignment", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-cond-assign"]).toBe("error");
         });
 
         test("no-consecutive-blank-lines", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-multiple-empty-lines"]).toBe("error");
         });
 
         test("no-console", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-console"]).toBe("error");
         });
 
         test("no-construct", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-new-wrappers"]).toBe("error");
         });
 
         test("no-debugger", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-debugger"]).toBe("error");
         });
 
         test("no-duplicate-super", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-duplicate-super"]).toBeUndefined();
         });
 
         test("no-empty", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-empty"]).toBe("error");
         });
 
         test("no-empty-interface", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-empty-interface"]).toBe("error");
         });
 
         test("no-eval", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-eval"]).toBe("error");
         });
 
         test("no-internal-module", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/prefer-namespace-keyword"]).toBe("error");
         });
 
         test("no-invalid-this", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-invalid-this"]).toBe("off");
         });
 
         test("no-misused-new", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-misused-new"]).toBeUndefined();
         });
 
         test("no-namespace", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-namespace"]).toBe("error");
         });
 
         test("no-parameter-properties", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-parameter-properties"]).toBe("off");
         });
 
         test("no-reference", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-triple-slash-reference"]).toBe("error");
         });
 
         test("no-reference-import", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-reference-import"]).toBeUndefined();
         });
 
         test("no-shadowed-variable", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-shadow"]).toBe("error");
         });
 
         test("no-string-literal", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["object-shorthand"]).toMatchObject(["error", 'properties']);
         });
 
         test("no-string-throw", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-throw-literal"]).toBe("error");
         });
 
         test("no-switch-case-fall-through", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-fallthrough"]).toBe("off");
         });
 
         test("no-trailing-whitespace", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-trailing-spaces"]).toBe("error");
         });
 
         test("no-unnecessary-initializer", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-undef-init"]).toBe("error");
         });
 
         test("no-unsafe-finally", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-unsafe-finally"]).toBe("error");
         });
 
         test("no-unused-expression", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-new"]).toBe("error");
         });
 
         test("no-use-before-declare", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-use-before-define"]).toBe("off");
         });
 
         test("no-var-keyword", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-var"]).toBe("error");
         });
 
         test("no-var-requires", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-var-requires"]).toBe("error");
         });
 
         test("object-literal-key-quotes", () => {
@@ -402,27 +405,27 @@ describe("typescript recommended rules", () => {
         });
 
         test("class-name", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/class-name-casing"]).toBe("error");
         });
 
         test("curly", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["curly"]).toBe("error");
         });
 
         test("eofline", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["eol-last"]).toBe("error");
         });
 
         test("forin", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["guard-for-in"]).toBe("error");
         });
 
         test("import-spacing", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["keyword-spacing"]).toMatchObject(["error", {after: true}]);
         });
 
         test("indent", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["indent"]).toBe("error");
         });
 
         test("jsdoc-format", () => {
@@ -430,47 +433,47 @@ describe("typescript recommended rules", () => {
         });
 
         test("label-position", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-labels"]).toBe("error");
         });
 
         test("max-line-length", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["max-len"]).toMatchObject(["error", {code: 120}]);
         });
 
         test("new-parens", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["new-parens"]).toBe("error");
         });
 
         test("no-arg", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-caller"]).toBe("error");
         });
 
         test("no-bitwise", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-bitwise"]).toBe("error");
         });
 
         test("no-conditional-assignment", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-cond-assign"]).toBe("error");
         });
 
         test("no-consecutive-blank-lines", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-multiple-empty-lines"]).toBe("error");
         });
 
         test("no-console", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-console"]).toBe("error");
         });
 
         test("no-construct", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-new-wrappers"]).toBe("error");
         });
 
         test("no-debugger", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-debugger"]).toBe("error");
         });
 
         test("no-duplicate-super", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-duplicate-super"]).toBeUndefined();
         });
 
         test("no-duplicate-variable", () => {
@@ -478,43 +481,43 @@ describe("typescript recommended rules", () => {
         });
 
         test("no-empty", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-empty"]).toBe("error");
         });
 
         test("no-eval", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-eval"]).toBe("error");
         });
 
         test("no-reference", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["typescript/no-triple-slash-reference"]).toBe("error");
         });
 
         test("no-shadowed-variable", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-shadow"]).toBe("error");
         });
 
         test("no-string-literal", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["object-shorthand"]).toMatchObject(["error", 'properties']);
         });
 
         test("no-string-throw", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-throw-literal"]).toBe("error");
         });
 
         test("no-switch-case-fall-through", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-fallthrough"]).toBe("off");
         });
 
         test("no-trailing-whitespace", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-trailing-spaces"]).toBe("error");
         });
 
         test("no-unused-expression", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-new"]).toBe("error");
         });
 
         test("no-use-before-declare", () => {
-            expect(false).toBeTruthy();
+            expect(eslintConfig.rules["no-use-before-define"]).toBe("off");
         });
 
         test("object-literal-sort-keys", () => {
