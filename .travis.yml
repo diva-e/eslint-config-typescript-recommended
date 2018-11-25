@@ -5,5 +5,5 @@ branches:
     only:
     - master
 script:
-- npm lint
+    - npm run lint
 - npm test
