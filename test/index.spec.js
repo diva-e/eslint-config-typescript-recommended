@@ -1,4 +1,4 @@
-const eslintConfig = require("./index");
+const eslintConfig = require("../index");
 
 describe("typescript recommended rules", () => {
 
