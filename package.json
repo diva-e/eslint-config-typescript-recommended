@@ -11,10 +11,11 @@
   "bugs": "https://github.com/diva-e/eslint-config-typescript-recommended/issues",
   "keywords": [
     "eslint",
-    "config",
-    "recommended",
+    "eslintconfig",
     "tslint",
-    "typescript"
+    "typescript",
+    "config",
+    "recommended"
   ],
   "main": "index.js",
   "scripts": {
