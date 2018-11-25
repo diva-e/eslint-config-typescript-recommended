@@ -1,5 +1,12 @@
 # Changes
 
+## 1.4.1.
+
+### Bug Fixes
+
+ * Added missing rules configuration
+ * Fixed rule mapping table
+
 ## 1.4.0.
 
 ### Bug Fixes

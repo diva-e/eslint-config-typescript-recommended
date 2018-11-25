@@ -59,6 +59,7 @@ module.exports = {
             }
         ],
         'no-return-await': 'error',
+        'no-sequences': 'error',
         'no-shadow': 'error',
         'no-sparse-arrays': 'error',
         'no-template-curly-in-string': 'error',

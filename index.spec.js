@@ -61,7 +61,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("ban-comma-operator", () => {
-            expect(eslintConfig.rules["ban-comma-operator"]).toBeUndefined();
+            expect(eslintConfig.rules["no-sequences"]).toBe("error");
         });
 
         test("jsdoc-format", () => {

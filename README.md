@@ -31,7 +31,7 @@ align | *-*
 arrow-parens | arrow-parens
 arrow-return-shorthand | arrow-body-style
 array-type | *-*
-ban-comma-operator | *-*
+ban-comma-operator | no-sequences
 ban-types | *-*
 callable-types | *-*
 class-name | typescript/class-name-casing
@@ -60,7 +60,7 @@ no-consecutive-blank-lines | no-multiple-empty-lines
 no-console | no-console
 no-construct | no-new-wrappers
 no-debugger | no-debugger
-no-duplicate-imports | *-*
+no-duplicate-imports | no-duplicate-imports
 no-duplicate-super | *-*
 no-duplicate-switch-case | no-duplicate-case
 no-duplicate-variable | no-redeclare
