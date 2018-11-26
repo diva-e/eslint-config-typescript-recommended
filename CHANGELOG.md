@@ -1,5 +1,11 @@
 # Changes
 
+## 1.4.6.
+ 
+### Features
+
+ * Supported newest eslint-plugin-typescript
+
 ## 1.4.5.
 
 ### Bug Fixes
