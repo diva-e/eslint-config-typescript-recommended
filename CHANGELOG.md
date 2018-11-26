@@ -1,5 +1,11 @@
 # Changes
 
+## 1.4.7.
+ 
+### Features
+
+ * Removed jsdoc rule because there is no mapping
+
 ## 1.4.6.
  
 ### Features

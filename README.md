@@ -46,7 +46,7 @@ import-spacing | keyword-spacing
 indent | indent
 interface-name | typescript/interface-name-prefix
 interface-over-type-literal | typescript/no-type-alias
-jsdoc-format | valid-jsdoc
+jsdoc-format | *-*
 label-position | no-labels
 max-classes-per-file | max-classes-per-file
 max-line-length | max-len

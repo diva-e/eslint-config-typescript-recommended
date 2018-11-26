@@ -122,12 +122,6 @@ module.exports = {
         'sort-imports': 'error',
         'sort-keys': 'error',
         'use-isnan': 'error',
-        'valid-jsdoc': [
-            'error',
-            {
-                requireReturn: false
-            }
-        ],
         'typescript/adjacent-overload-signatures': 'error',
         'typescript/class-name-casing': 'error',
         'typescript/no-explicit-any': 'off',
