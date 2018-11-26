@@ -33,7 +33,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("no-duplicate-variable", () => {
-            expect(eslintConfig.rules["no-redeclare"]).toMatchObject(["error", {hoist: "never"}]);
+            expect(eslintConfig.rules["no-redeclare"]).toBe("error");
         });
 
         test("no-this-assignment", () => {
@@ -263,7 +263,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("no-shadowed-variable", () => {
-            expect(eslintConfig.rules["no-shadow"]).toBe("error");
+            expect(eslintConfig.rules["no-shadow"]).toMatchObject(["error", {hoist: "never"}]);
         });
 
         test("no-string-literal", () => {
@@ -479,7 +479,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("no-duplicate-variable", () => {
-            expect(eslintConfig.rules["no-redeclare"][0]).toBe("error");
+            expect(eslintConfig.rules["no-redeclare"]).toBe("error");
         });
 
         test("no-empty", () => {
@@ -495,7 +495,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("no-shadowed-variable", () => {
-            expect(eslintConfig.rules["no-shadow"]).toBe("error");
+            expect(eslintConfig.rules["no-shadow"]).toMatchObject(["error", {hoist: "never"}]);
         });
 
         test("no-string-literal", () => {

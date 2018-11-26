@@ -52,15 +52,15 @@ module.exports = {
         'no-multiple-empty-lines': 'error',
         'no-new': 'error',
         'no-new-wrappers': 'error',
-        'no-redeclare': [
+        'no-redeclare':  'error',
+        'no-return-await': 'error',
+        'no-sequences': 'error',
+        'no-shadow': [
             'error',
             {
                 hoist: 'never'
             }
         ],
-        'no-return-await': 'error',
-        'no-sequences': 'error',
-        'no-shadow': 'error',
         'no-sparse-arrays': 'error',
         'no-template-curly-in-string': 'error',
         'no-throw-literal': 'error',

@@ -1,5 +1,11 @@
 # Changes
 
+## 1.4.8.
+ 
+### Bug Fixes
+
+ * Fixed wrong no-shadowed-variable configuration
+
 ## 1.4.7.
  
 ### Features
