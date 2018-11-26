@@ -45,7 +45,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("space-within-parens", () => {
-            expect(eslintConfig.rules["space-within-parens"]).toMatchObject(["error", "always"]);
+            expect(eslintConfig.rules["space-in-parens"]).toMatchObject(["error", "always"]);
         });
 
         test("no-submodule-imports", () => {

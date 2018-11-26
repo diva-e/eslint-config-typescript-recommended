@@ -109,7 +109,7 @@ quotemark | quotes
 radix | radix
 semicolon | semi
 space-before-function-paren | space-before-function-paren
-space-within-parens | space-within-parens
+space-within-parens | space-in-parens
 trailing-comma | comma-dangle
 triple-equals | eqeqeq
 typedef | *-*

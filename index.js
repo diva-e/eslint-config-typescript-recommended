@@ -115,7 +115,7 @@ module.exports = {
         ],
         'spaced-comment': 'error',
         'space-infix-ops': 'error',
-        'space-within-parens': [
+        'space-in-parens': [
             'error',
             'always'
         ],
