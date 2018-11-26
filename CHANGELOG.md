@@ -1,5 +1,11 @@
 # Changes
 
+## 1.4.5.
+
+### Bug Fixes
+
+ * Only check for jsdoc syntax errors
+
 ## 1.4.2.
 
 ### Bug Fixes

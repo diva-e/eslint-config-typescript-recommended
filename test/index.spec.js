@@ -65,7 +65,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("jsdoc-format", () => {
-            expect(eslintConfig.rules["valid-jsdoc"]).toBe("error");
+            expect(eslintConfig.rules["valid-jsdoc"]).toMatchObject(["error", {requireReturn: false}]);
         });
 
         test("no-duplicate-switch-case", () => {
@@ -155,7 +155,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("jsdoc-format", () => {
-            expect(eslintConfig.rules["valid-jsdoc"]).toBe("error");
+            expect(eslintConfig.rules["valid-jsdoc"]).toMatchObject(["error", {requireReturn: false}]);
         });
 
         test("label-position", () => {
@@ -431,7 +431,7 @@ describe("typescript recommended rules", () => {
         });
 
         test("jsdoc-format", () => {
-            expect(eslintConfig.rules["valid-jsdoc"]).toBe("error");
+            expect(eslintConfig.rules["valid-jsdoc"]).toMatchObject(["error", {requireReturn: false}]);
         });
 
         test("label-position", () => {
