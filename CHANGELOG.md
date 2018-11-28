@@ -1,5 +1,17 @@
 # Changes
 
+## 1.4.10.
+
+### Features
+
+ * Adjusted README.md
+
+### Bug Fixes
+
+ * Fixed wrong tests
+ * Fixed wrong no-unused-expression mapping
+ * Adjusted tests
+
 ## 1.4.9.
  
 ### Bug Fixes

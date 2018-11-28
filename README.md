@@ -8,8 +8,13 @@ See [eslint](https://github.com/eslint/eslint) for recommended rules.
 See [tslint](https://github.com/palantir/tslint) for recommended rules.
 See [eslint-plugin-typescript](https://github.com/nzakas/eslint-plugin-typescript) for available rules.
 
-This config add recommended rules from `tslint` when they are available in `eslint`.
+This config adds recommended rules from `tslint` when they are available in `eslint`.
 Available rules from `eslint-plugin-typescript` will be included when needed.
+
+
+## Pre-Install
+
+[eslint](https://github.com/eslint/eslint and [eslint-plugin-typescript](https://github.com/nzakas/eslint-plugin-typescript) are installed and configured via eslint config.
 
 ## Install
 
@@ -28,7 +33,7 @@ Then, add this to your eslint config file like:
 
 TSLint | ESLint
 :---: | :---:
-adjacent-overload-signatures | *-*
+adjacent-overload-signatures | typescript/adjacent-overload-signatures
 align | *-*
 arrow-parens | arrow-parens
 arrow-return-shorthand | arrow-body-style
@@ -90,7 +95,7 @@ no-this-assignment | *-*
 no-trailing-whitespace | no-trailing-spaces
 no-unnecessary-initializer | no-undef-init
 no-unsafe-finally | no-unsafe-finally
-no-unused-expression | no-new
+no-unused-expression | no-unused-expressions
 no-use-before-declare | no-use-before-define
 no-var-keyword | no-var
 no-var-requires | typescript/no-var-requires
@@ -114,6 +119,7 @@ trailing-comma | comma-dangle
 triple-equals | eqeqeq
 typedef | *-*
 typedef-whitespace | *-*
+typeof-compare | *-*
 unified-signatures | *-*
 use-isnan | use-isnan
 variable-name | camelcase

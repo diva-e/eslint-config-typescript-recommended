@@ -50,7 +50,6 @@ module.exports = {
         'no-invalid-this': 'off',
         'no-labels': 'error',
         'no-multiple-empty-lines': 'error',
-        'no-new': 'error',
         'no-new-wrappers': 'error',
         'no-redeclare':  'error',
         'no-return-await': 'error',
