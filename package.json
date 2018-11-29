@@ -18,6 +18,7 @@
     "recommended"
   ],
   "main": "index.js",
+  "files": ["index.js"],
   "scripts": {
     "lint": "eslint \"./*.js\" \"./test/*.js\"",
     "test": "jest"
