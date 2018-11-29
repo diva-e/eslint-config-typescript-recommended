@@ -1,5 +1,5 @@
 const eslintConfig = require("../index");
-const semver = require('semver');
+const semver = require('semver'); // eslint-disable-line node/no-unpublished-require
 const recommendedEslintConfig = require("eslint/conf/eslint-recommended");
 const latestTslintConfig = require("tslint/lib/configs/latest"); // eslint-disable-line node/no-unpublished-require
 const recommendedTslintConfig = require("tslint/lib/configs/recommended"); // eslint-disable-line node/no-unpublished-require
