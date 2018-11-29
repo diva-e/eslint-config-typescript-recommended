@@ -14,7 +14,7 @@ Available rules from `eslint-plugin-typescript` will be included when needed.
 
 ## Pre-Install
 
-[eslint](https://github.com/eslint/eslint and [eslint-plugin-typescript](https://github.com/nzakas/eslint-plugin-typescript) are installed and configured via eslint config.
+[eslint](https://github.com/eslint/eslint) and [eslint-plugin-typescript](https://github.com/nzakas/eslint-plugin-typescript) are installed and configured via eslint config.
 
 ## Install
 

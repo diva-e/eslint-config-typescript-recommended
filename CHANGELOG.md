@@ -1,5 +1,15 @@
 # Changes
 
+## 1.4.11.
+
+### Features
+
+ * Added files package.json field
+
+### Bug Fixes
+
+ * Fixed markdown link in README.md
+
 ## 1.4.10.
 
 ### Features
