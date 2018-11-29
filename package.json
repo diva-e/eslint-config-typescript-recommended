@@ -30,11 +30,14 @@
   "devDependencies": {
     "@types/jest": "latest",
     "@types/node": "latest",
+    "@types/semver": "latest",
     "eslint": "latest",
     "eslint-plugin-jest": "latest",
     "eslint-plugin-node": "latest",
     "eslint-plugin-typescript": "latest",
     "jest": "latest",
-    "tslint": "latest"
+    "semver": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
   }
 }

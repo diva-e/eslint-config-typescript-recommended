@@ -1,9 +1,22 @@
 const eslintConfig = require("../index");
+const semver = require('semver');
 const recommendedEslintConfig = require("eslint/conf/eslint-recommended");
 const latestTslintConfig = require("tslint/lib/configs/latest"); // eslint-disable-line node/no-unpublished-require
 const recommendedTslintConfig = require("tslint/lib/configs/recommended"); // eslint-disable-line node/no-unpublished-require
 
 describe("typescript recommended rules", () => {
+
+    test("eslint version", () => {
+        expect(semver.satisfies(require("eslint/package").version, "5.9.0")).toBeTruthy();
+    });
+
+    test("tslint version", () => {
+        expect(semver.satisfies(require("tslint/package").version, "5.11.0")).toBeTruthy(); // eslint-disable-line node/no-unpublished-require
+    });
+
+    test("eslint-plugin-typescript version", () => {
+        expect(semver.satisfies(require("eslint-plugin-typescript/package").version, ">=0.13.0 <=0.14.0")).toBeTruthy();
+    });
 
     test("number of rules", () => {
         expect(Object.keys(eslintConfig.rules).length).toBe(75);
