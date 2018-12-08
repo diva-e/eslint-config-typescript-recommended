@@ -682,6 +682,7 @@ describe("typescript recommended rules", () => {
         test("typedef-whitespace", () => {
             expect(recommendedTslintConfig.rules["typedef-whitespace"]).toMatchObject({options: [{"call-signature": "nospace", "index-signature": "nospace", parameter: "nospace", "property-declaration": "nospace", "variable-declaration": "nospace"}, {"call-signature": "onespace", "index-signature": "onespace", parameter: "onespace", "property-declaration": "onespace", "variable-declaration": "onespace"}]});
             expect(recommendedEslintConfig.rules["typedef-whitespace"]).toBeUndefined();
+            expect(require("eslint-plugin-typescript/lib/rules/type-annotation-spacing")).toBeDefined();
 
             expect(eslintConfig.rules["typescript/type-annotation-spacing"]).toBe("error");
         });
