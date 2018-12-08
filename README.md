@@ -118,7 +118,7 @@ space-within-parens | space-in-parens
 trailing-comma | comma-dangle
 triple-equals | eqeqeq
 typedef | *-*
-typedef-whitespace | *-*
+typedef-whitespace | typescript/type-annotation-spacing
 typeof-compare | *-*
 unified-signatures | *-*
 use-isnan | use-isnan

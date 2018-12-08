@@ -7,7 +7,7 @@ const recommendedTslintConfig = require("tslint/lib/configs/recommended"); // es
 describe("typescript recommended rules", () => {
 
     test("eslint version", () => {
-        expect(semver.satisfies(require("eslint/package").version, "5.9.0")).toBeTruthy();
+        expect(semver.satisfies(require("eslint/package").version, ">=5.9.0 <=5.10.0")).toBeTruthy();
     });
 
     test("tslint version", () => {
@@ -19,7 +19,7 @@ describe("typescript recommended rules", () => {
     });
 
     test("number of rules", () => {
-        expect(Object.keys(eslintConfig.rules).length).toBe(75);
+        expect(Object.keys(eslintConfig.rules).length).toBe(76);
     });
 
     describe("latest", () => {
@@ -683,7 +683,7 @@ describe("typescript recommended rules", () => {
             expect(recommendedTslintConfig.rules["typedef-whitespace"]).toMatchObject({options: [{"call-signature": "nospace", "index-signature": "nospace", parameter: "nospace", "property-declaration": "nospace", "variable-declaration": "nospace"}, {"call-signature": "onespace", "index-signature": "onespace", parameter: "onespace", "property-declaration": "onespace", "variable-declaration": "onespace"}]});
             expect(recommendedEslintConfig.rules["typedef-whitespace"]).toBeUndefined();
 
-            expect(eslintConfig.rules["typedef-whitespace"]).toBeUndefined();
+            expect(eslintConfig.rules["typescript/type-annotation-spacing"]).toBe("error");
         });
 
         test("typeof-compare", () => {

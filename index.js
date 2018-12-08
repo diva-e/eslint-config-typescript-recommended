@@ -137,6 +137,7 @@ module.exports = {
         'typescript/no-triple-slash-reference': 'error',
         'typescript/no-type-alias': 'error',
         'typescript/no-var-requires': 'error',
-        'typescript/prefer-namespace-keyword': 'error'
+        'typescript/prefer-namespace-keyword': 'error',
+        'typescript/type-annotation-spacing': 'error'
     }
 };

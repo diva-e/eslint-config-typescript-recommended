@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-typescript-recommended",
-  "version": "1.4.11",
+  "version": "1.4.12",
   "description": "TSLint recommended rules for ESLint",
   "author": "Christian Stornowski <christian.stornowski@diva-e.com> (https://www.diva-e.com/)",
   "homepage": "https://www.diva-e.com",
@@ -18,13 +18,15 @@
     "recommended"
   ],
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint \"./*.js\" \"./test/*.js\"",
     "test": "jest"
   },
   "peerDependencies": {
-    "eslint": "5.9.0",
+    "eslint": ">=5.9.0 <=5.10.0",
     "eslint-plugin-typescript": ">=0.13.0 <=0.14.0"
   },
   "license": "Apache-2.0",

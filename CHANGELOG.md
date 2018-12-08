@@ -1,5 +1,12 @@
 # Changes
 
+## 1.4.12.
+
+### Features
+
+ * Added typedef-whitespace mapping
+ * Added support for newest eslint version
+
 ## 1.4.11.
 
 ### Features
