@@ -138,6 +138,7 @@ module.exports = {
         'typescript/no-type-alias': 'error',
         'typescript/no-var-requires': 'error',
         'typescript/prefer-namespace-keyword': 'error',
-        'typescript/type-annotation-spacing': 'error'
+        'typescript/type-annotation-spacing': 'error',
+        'valid-typeof': 'error'
     }
 };

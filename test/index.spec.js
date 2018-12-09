@@ -19,7 +19,7 @@ describe("typescript recommended rules", () => {
     });
 
     test("number of rules", () => {
-        expect(Object.keys(eslintConfig.rules).length).toBe(76);
+        expect(Object.keys(eslintConfig.rules).length).toBe(77);
     });
 
     describe("latest", () => {
@@ -689,9 +689,9 @@ describe("typescript recommended rules", () => {
 
         test("typeof-compare", () => {
             expect(recommendedTslintConfig.rules["typeof-compare"]).toBeFalsy();
-            expect(recommendedEslintConfig.rules["typeof-compare"]).toBeUndefined();
+            expect(recommendedEslintConfig.rules["valid-typeof"]).toBe("error");
 
-            expect(eslintConfig.rules["typeof-compare"]).toBeUndefined();
+            expect(eslintConfig.rules["valid-typeof"]).toBe("error");
         });
 
         test("unified-signatures", () => {

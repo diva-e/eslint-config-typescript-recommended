@@ -1,13 +1,19 @@
 # Changes
 
-## 1.4.12.
+## 1.4.13
+
+### Features
+
+ * Added typeof-compare mapping
+
+## 1.4.12
 
 ### Features
 
  * Added typedef-whitespace mapping
  * Added support for newest eslint version
 
-## 1.4.11.
+## 1.4.11
 
 ### Features
 
@@ -17,7 +23,7 @@
 
  * Fixed markdown link in README.md
 
-## 1.4.10.
+## 1.4.10
 
 ### Features
 
@@ -29,44 +35,44 @@
  * Fixed wrong no-unused-expression mapping
  * Adjusted tests
 
-## 1.4.9.
+## 1.4.9
  
 ### Bug Fixes
 
  * Fixed wrong space-within-parens mapping
 
-## 1.4.8.
+## 1.4.8
  
 ### Bug Fixes
 
  * Fixed wrong no-shadowed-variable configuration
 
-## 1.4.7.
+## 1.4.7
  
 ### Features
 
  * Removed jsdoc rule because there is no mapping
 
-## 1.4.6.
+## 1.4.6
  
 ### Features
 
  * Supported newest eslint-plugin-typescript
 
-## 1.4.5.
+## 1.4.5
 
 ### Bug Fixes
 
  * Only check for jsdoc syntax errors
 
-## 1.4.2.
+## 1.4.2
 
 ### Bug Fixes
 
  * Added missing rules configuration
  * Fixed rule mapping table
 
-## 1.4.0.
+## 1.4.0
 
 ### Bug Fixes
 
@@ -76,7 +82,7 @@
 
  * Added configuration tests
 
-## 1.3.0.
+## 1.3.0
 
 ### Bug Fixes
 
@@ -86,7 +92,7 @@
 
  * Removed `eslint:recommended` dependencies by config rules separately.
 
-## 1.2.0.
+## 1.2.0
 
 ### Bug Fixes
 
@@ -96,7 +102,7 @@
 
  * Extends from `eslint:recommended`.
 
-## 1.1.0.
+## 1.1.0
 
 ### Bug Fixes
 

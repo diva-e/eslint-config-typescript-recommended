@@ -119,7 +119,7 @@ trailing-comma | comma-dangle
 triple-equals | eqeqeq
 typedef | *-*
 typedef-whitespace | typescript/type-annotation-spacing
-typeof-compare | *-*
+typeof-compare | valid-typeof
 unified-signatures | *-*
 use-isnan | use-isnan
 variable-name | camelcase
