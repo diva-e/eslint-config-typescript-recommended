@@ -1,6 +1,7 @@
 # eslint-config-typescript-recommended
 
 [![Build Status](https://img.shields.io/travis/diva-e/eslint-config-typescript-recommended.svg)](https://travis-ci.org/diva-e/eslint-config-typescript-recommended)
+[![Coverage Status](https://coveralls.io/repos/github/diva-e/eslint-config-typescript-recommended/badge.svg?branch=master)](https://coveralls.io/github/diva-e/eslint-config-typescript-recommended?branch=master)
 
 > TSLint recommended rules for ESLint
 

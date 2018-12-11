@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-typescript-recommended",
-  "version": "1.4.13",
+  "version": "1.4.14",
   "description": "TSLint recommended rules for ESLint",
   "author": "Christian Stornowski <christian.stornowski@diva-e.com> (https://www.diva-e.com/)",
   "homepage": "https://www.diva-e.com",
@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "lint": "eslint \"./*.js\" \"./test/*.js\"",
-    "test": "jest"
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "peerDependencies": {
     "eslint": ">=5.9.0 <=5.10.0",
@@ -34,6 +34,7 @@
     "@types/jest": "latest",
     "@types/node": "latest",
     "@types/semver": "latest",
+    "coveralls": "latest",
     "eslint": "latest",
     "eslint-plugin-jest": "latest",
     "eslint-plugin-node": "latest",
