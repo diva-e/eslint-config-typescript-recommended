@@ -1,5 +1,11 @@
 # Changes
 
+## 1.4.15
+
+### Features
+
+ * Support newest tslint and eslint
+
 ## 1.4.13
 
 ### Features

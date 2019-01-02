@@ -7,11 +7,11 @@ const recommendedTslintConfig = require("tslint/lib/configs/recommended"); // es
 describe("typescript recommended rules", () => {
 
     test("eslint version", () => {
-        expect(semver.satisfies(require("eslint/package").version, ">=5.9.0 <=5.10.0")).toBeTruthy();
+        expect(semver.satisfies(require("eslint/package").version, ">=5.9.0 <=5.11.1")).toBeTruthy();
     });
 
     test("tslint version", () => {
-        expect(semver.satisfies(require("tslint/package").version, "5.11.0")).toBeTruthy(); // eslint-disable-line node/no-unpublished-require
+        expect(semver.satisfies(require("tslint/package").version, "5.12.0")).toBeTruthy(); // eslint-disable-line node/no-unpublished-require
     });
 
     test("eslint-plugin-typescript version", () => {
@@ -19,7 +19,7 @@ describe("typescript recommended rules", () => {
     });
 
     test("number of rules", () => {
-        expect(Object.keys(eslintConfig.rules).length).toBe(77);
+        expect(Object.keys(eslintConfig.rules).length).toBe(78);
     });
 
     describe("latest", () => {
@@ -159,7 +159,7 @@ describe("typescript recommended rules", () => {
     describe("ts", () => {
 
         test("number of tslint rules", () => {
-            expect(Object.keys(recommendedTslintConfig.rules).length).toBe(77);
+            expect(Object.keys(recommendedTslintConfig.rules).length).toBe(78);
         });
 
         test("adjacent-overload-signatures", () => {
@@ -253,6 +253,13 @@ describe("typescript recommended rules", () => {
             expect(recommendedEslintConfig.rules["guard-for-in"]).toBeDefined();
 
             expect(eslintConfig.rules["guard-for-in"]).toBe("error");
+        });
+
+        test("function-constructor", () => {
+            expect(recommendedTslintConfig.rules["function-constructor"]).toBeTruthy();
+            expect(recommendedEslintConfig.rules["no-new-func"]).toBeDefined();
+
+            expect(eslintConfig.rules["no-new-func"]).toBe("error");
         });
 
         test("import-spacing", () => {

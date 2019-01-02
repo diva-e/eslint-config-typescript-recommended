@@ -48,6 +48,7 @@ curly | curly
 cyclomatic-complexity | complexity
 eofline | eol-last
 forin | guard-for-in
+function-constructor | no-new-func
 import-spacing | keyword-spacing
 indent | indent
 interface-name | typescript/interface-name-prefix
