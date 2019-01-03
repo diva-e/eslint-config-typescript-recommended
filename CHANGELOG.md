@@ -1,5 +1,12 @@
 # Changes
 
+## 1.4.16
+
+### Features
+
+ * Support newest eslint
+
+
 ## 1.4.15
 
 ### Features
