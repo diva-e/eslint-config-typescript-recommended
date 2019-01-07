@@ -7,7 +7,7 @@ const recommendedTslintConfig = require("tslint/lib/configs/recommended"); // es
 describe("typescript recommended rules", () => {
 
     test("eslint version", () => {
-        expect(semver.satisfies(require("eslint/package").version, ">=5.9.0 <=5.11.1")).toBeTruthy();
+        expect(semver.satisfies(require("eslint/package").version, ">=5.9.0 <=5.12.0")).toBeTruthy();
     });
 
     test("tslint version", () => {
